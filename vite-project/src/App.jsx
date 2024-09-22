@@ -62,7 +62,7 @@ const App = () => {
       console.log("Filter and Input:", filter, parsedInput);
 
       // Send the parsed JSON input to the backend
-      const res = await axios.post("http://localhost:3000/bfhl", parsedInput);
+      const res = await axios.post("https://bajaj-gthp.onrender.com/bfhl", parsedInput);
 
       console.log(res.data);
       // Update numbers and highest alphabet based on the response
